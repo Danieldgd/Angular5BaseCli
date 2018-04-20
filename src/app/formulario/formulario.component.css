@@ -1,0 +1,23 @@
+.horizontal-container{
+    width: 400px;
+    height: 200px;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.boton {
+    border: none;
+    color: white;
+    padding: 15px 28px;
+    font-size: 16px;
+    background-color: rgb(9, 59, 196);
+    margin-top: 50px;
+}
+
+.input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-top: 15px;
+}

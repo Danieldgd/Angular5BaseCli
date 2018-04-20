@@ -10,6 +10,12 @@ import { GitHubModel } from '../model/git-hub-model';
 })
 export class MainComponent implements OnInit {
 
+  foods = [
+    {value: 'steak-0', viewValue: 'Steak'},
+    {value: 'pizza-1', viewValue: 'Pizza'},
+    {value: 'tacos-2', viewValue: 'Tacos'}
+  ];
+
   //gitHubData:GitHubModel;
   gitHubDataList:Array<GitHubModel>;
 
@@ -39,5 +45,7 @@ export class MainComponent implements OnInit {
   deleteObject(obj:GitHubModel){
    this.gitHubDataList=this.gitHubDataList.filter(x => x !== obj);
   }
+
+
 
 }

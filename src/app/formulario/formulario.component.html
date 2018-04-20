@@ -1,11 +1,14 @@
 <div class="horizontal-container">
-        <div>
-        <label>Usuario</label>
-        <input type="text" class="input" placeholder="Ej: User01" [(ngModel)]="usuario"/>
+        <div class="example-form">
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Usuario" [(ngModel)]="usuario"/>
+                </mat-form-field>
+              
+                <mat-form-field class="example-full-width">
+                  <input matInput type="password" placeholder="Password" [(ngModel)]="password"/>
+                </mat-form-field>
         </div>
-        <div>
-        <label>Password</label>
-        <input type="password" class="input" placeholder="*****" [(ngModel)]="password"/>
+        <div class="button-row">
+        <button mat-fab color="primary" (click)="ValidarUsuario()">LogIn</button>
         </div>
-        <button class="boton" (click)="ValidarUsuario()">Login</button>
 </div>

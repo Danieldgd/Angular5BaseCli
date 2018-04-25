@@ -17,12 +17,13 @@ private password:string;
 
   ValidarUsuario(){
       if(this._log.logUsr(this.usuario,this.password)==true){
-         this.router.navigate(['']);
-     }else{
-       window.alert("Usuario no valido");
+         this.router.navigate(['contact']);
+      }else{
+         window.alert("Usuario no valido");
      }
+     //window.alert("Usuario no valido");
    }
-  //private _log:FormularioService, private router:Router
+
   ngOnInit() {
   }
 

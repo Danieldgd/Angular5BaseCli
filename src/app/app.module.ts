@@ -25,6 +25,7 @@ import { ReactivoComponent } from './reactivo/reactivo.component';
 import { LoginComponent } from "./login/login.component";
 import { FormularioComponent } from "./formulario/formulario.component";
 import {MatSelectModule} from '@angular/material/select';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 export const MATERIAL_COMPONENTS = [
   MatToolbarModule,
@@ -34,7 +35,8 @@ export const MATERIAL_COMPONENTS = [
   MatIconModule,
   MatInputModule,
   MatProgressBarModule,
-  MatSelectModule
+  MatSelectModule,
+  MatCheckboxModule
 ]
 
 @NgModule({

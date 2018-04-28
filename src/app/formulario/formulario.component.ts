@@ -9,14 +9,18 @@ import { Router } from "@angular/router";
 })
 export class FormularioComponent implements OnInit,OnDestroy {
 
-private usuario:string;
-private password:string;
+public usuario:string;
+public password:string;
+public confpassword:string;
+public correo:string;
+public nombre:string;
 
 
-  constructor(private _log:FormularioService, private router:Router) { }
+
+  constructor(private _log:FormularioService, public router:Router) { }
 
   ValidarUsuario(){
-      if(this._log.logUsr(this.usuario,this.password)==true){
+      if(this._log.logUsr(this.usuario,this.password,this.confpassword,this.correo)){
          this.router.navigate(['contact']);
       }else{
          window.alert("Usuario no valido");
